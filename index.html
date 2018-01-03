@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Andrei Nemeti | Portofolio
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<div class="overlay">
+				     </div>
+			<div class="logo">
+				<a href="index.html"><img src="1.png"></a>
+			</div>
+			<div class="open-nav" onclick="openNav()">
+				<span style="font-size:30px;cursor:pointer">&#9776;</span>
+			</div>
+			<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+			<div class="home-text">
+				<h4>HI! MY NAME IS ANDREI &amp; I AM A</h4>
+				<h1>Professional<br/> Front-end <br/>developer</h1>
+
+			</div>	
+			<div class="social">
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-codepen" aria-hidden="true"></i>
+								</a>
+
+
+			</div>
+				<div class=scroll-container>
+            <a href=#>
+                <div class=mouse>
+                    <div class=scroller></div>
+                </div>
+            </a>
+
+        </div> <!-- end scroll -->
+   
+		</div> <!-- end main wrapper -->
+		<script>
+			
+var x =  document.getElementById("mySidenav");
+			function openNav() {
+       		x.classList.add('mobile-only');
+
+}
+
+ 
+
+		function closeNav() {
+
+ 		x.classList.remove("mobile-only");
+
+
+
+}
+		</script>
+	</body>
+
+</html>
