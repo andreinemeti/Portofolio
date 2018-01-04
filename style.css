@@ -1,3 +1,31 @@
+
+
+
+
+
+
+@-webkit-keyframes fadeIn {
+
+    from {
+        opacity:0;
+    }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
 @keyframes zoom-in {
     0% {
         transform: scale(1)
@@ -76,15 +104,13 @@ transition:all .5s;
     height: 50px;
     line-height:50px;
     width: 500px;
-    position: fixed;
+    position: absolute;
     z-index: 1111;
     top: 0;
     right:5rem;
     float:right;
     transition: 0.5s;
     border-bottom:5px solid grey;
-
-
 }
 
 .sidenav a {
@@ -100,9 +126,6 @@ transition:all .5s;
 
 /*************************** hover effect ***************/
 
-.sidenav a:hover {
-color: #ACA8A8;
-}
 
 #mySidenav a::after{
     content: '';
@@ -379,6 +402,13 @@ background: linear-gradient(to bottom, #DC281E, #F00000); /* W3C, IE 10+/ Edge, 
  opacity:.8;
 }
 
+
+.third-page .home-text {
+    width:100%;
+    border:none;
+    box-shadow:none;
+}
+
 .fourth-page {
     background-size:cover;
     position:relative;
@@ -400,40 +430,127 @@ background: linear-gradient(to bottom, #DC281E, #F00000); /* W3C, IE 10+/ Edge, 
     width:95%;
     border:none;
     box-shadow:none;
+
 }
 
 .fourth-page h1 {
     margin-top:0;
-    padding-top:20px;
+    padding-top:30px;
 }
 
 .fourth-page .home-text p{
     color:white;
     width:70%;
     margin:0 auto;
-    font-size:22px;
+    font-size:20px;
+      
+
 }
 
+
+.sortContainer {
+        width:100%;
+        margin:0 auto;
+}
+.sortContainer ul {
+    font-size:12px;
+    list-style-type:none;
+    color:white;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.sortBtn {
+        margin:5px 5px;
+        text-align:center;
+        background:#555252;
+        cursor:pointer;
+        padding:5px 10px;
+        box-shadow: 0 19px 58px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .1);
+        transition:all .3s;
+
+}
+
+.sortBtn:hover {
+    color:#555252;
+    background:white;
+    border:#555252;
+}
+
+.filter {
+  display: none;
+}
+
+.show {
+          animation:fadeIn 2s;
+   display:flex;
+   justify-content:space-around;
+   flex-direction:row;
+}
+
+.sortBtn.active {
+    color:#555252;
+    border:#555252;
+    background:white;
+}
 
 .portofolio-container{
-        display:inline-flex;
+        display:flex;
         justify-content:space-around;
         flex-direction:row;
-        height:400px;
-        width:100%;
-
+        flex-wrap:wrap;
+        padding-bottom:30px;
+        width:70%;
+        flex-direction:row;
+        margin:0 auto;
+     /*   min-height:600px;*/
 
 }
+
 .portofolio {
     box-sizing:border-box;
     margin-top:30px;
     height:200px;
-    width:22%;
+    width:40%;
     border:1px solid #fff;
-    background:red;
+    background:gray;
     box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .1);
+      position: relative;
+}
+
+.hover-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: #000;
 
 }
+
+.filter.portofolio:hover .hover-text {
+      color: #fff;
+    opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+text-align:center;
+}
+
 
 .portofolio1 {
     background:url("img-optimized/portofolio1.jpg") center no-repeat;
@@ -441,13 +558,14 @@ background: linear-gradient(to bottom, #DC281E, #F00000); /* W3C, IE 10+/ Edge, 
 }
 
 .portofolio2 {
-    background:url("img-optimized/portofolio2.jpg") center no-repeat;
+    background:url("img-optimized/portofolio2.jpg") left no-repeat;
     background-size:cover;
 }
 
 .portofolio3 {
     background:url("img-optimized/portofolio3.jpg") center no-repeat;
     background-size:cover;
+
 }
 
 .portofolio4 {
@@ -455,9 +573,108 @@ background: linear-gradient(to bottom, #DC281E, #F00000); /* W3C, IE 10+/ Edge, 
     background-size:cover;
 }
 
+.portofolio5 {
+    background:url("img-optimized/portofolio5.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio6 {
+    background:url("img-optimized/portofolio6.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio7 {
+    background:url("img-optimized/portofolio7.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio8 {
+    background:url("img-optimized/portofolio8.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio9 {
+    background:url("img-optimized/portofolio9.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio10 {
+    background:url("img-optimized/portofolio10.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio11 {
+    background:url("img-optimized/portofolio11.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio12 {
+    background:url("img-optimized/portofolio12.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio13 {
+    background:url("img-optimized/portofolio13.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio14 {
+    background:url("img-optimized/portofolio14.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio15 {
+    background:url("img-optimized/portofolio15.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio16 {
+    background:url("img-optimized/portofolio16.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio17 {
+    background:url("img-optimized/portofolio17.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.portofolio18 {
+    background:url("img-optimized/portofolio18.jpg") center no-repeat;
+    background-size:cover;
+}
+
+@media all and (max-width:960px) {
+    .container.fourth-page .home-text p {
+        width:90%; 
+
+    }
+
+    .portofolio {
+        width:45%;
+    }
+
+    .portofolio-container {
+    width:90%;
+}
+}
 
 
-@media screen and (max-width:600px) {
+
+@media all and (max-width:569px) {
+            .portofolio {
+        width:77%;
+    }
+}
+
+@media all and (max-width: 480px) {
+       .portofolio {
+        width:90%;
+}
+}
+
+
+
+@media all and (max-width:600px) {
 
     .container.first-page {
         background-size:850px;
@@ -485,7 +702,7 @@ background: linear-gradient(to bottom, #DC281E, #F00000); /* W3C, IE 10+/ Edge, 
 
 }
 
-@media screen and (max-width:690px) {
+@media all and (max-width:690px) {
     .social {
     flex-direction:row;
     left:0;
@@ -498,7 +715,7 @@ background: linear-gradient(to bottom, #DC281E, #F00000); /* W3C, IE 10+/ Edge, 
 }
 }
 
-@media screen and (max-width:767px) {
+@media all and (max-width:767px) {
 
     .logo {
     width:120px;
@@ -579,7 +796,7 @@ width:100%;
 
 
 
-@media screen and (max-width:380px) {
+@media all and (max-width:380px) {
 .container.second-page .home-text {
 
     width:100%;
@@ -620,6 +837,5 @@ width:100%;
     margin:15px auto 0 auto;    
 }
     }
-
 
 
