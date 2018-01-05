@@ -205,8 +205,11 @@ color:#E7E3E3;
 }
 
 .home-text h4 {
+
     margin-top:95px;
 font-weight:100;
+
+
 }
 
 .scroll-container {
@@ -267,7 +270,7 @@ font-weight:100;
 .social .fa {
     color:lightblue;
     padding:5px;
-    font-size:15px;
+    font-size:18px;
     margin-top:20px;
     border:1px solid lightblue;
     border-radius:10%;  
@@ -500,7 +503,6 @@ background: -webkit-linear-gradient(to bottom, #ca0909f7, #000000);
 .portofolio-container{
         display:flex;
         justify-content:space-around;
-        flex-direction:row;
         flex-wrap:wrap;
         padding-bottom:30px;
         width:70%;
@@ -742,6 +744,10 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); */
     border:5px solid #DB123D;
 }
 
+.fifth-page .home-text h1 {
+    margin-bottom:-10px;
+}
+
 
 p::selection,
 a::selection,
@@ -782,106 +788,20 @@ span::selection {
 }
 
 
-@media all and (max-width:380px) {
-.container.second-page .home-text {
+@media all and (max-width:960px) {
+    .container.fourth-page .home-text p {
+        width:90%; 
 
-    width:100%;
-}
+    }
+    .portofolio {
+        width:45%;
+    }
 
-.container.second-page .home-text h1 {
-    font-size:35px;
-}
-
-.container.second-page .home-text p {
+    .portofolio-container {
     width:90%;
 }
-    .open-nav {
-        width:70px;
-    }
-.logo {
-    margin-right:8px;
-    top:-2px;
 }
 
-.logo a img {
-   height:100px;
-   right:-1.5rem;
-}
-
-    .home-text {
-        text-align:center;
-}
-
-.home-text h4 {
-    font-size:20px;
-
-}
-
-.home-text h1 {
-    font-size:30px;
-    width:90%;
-    margin:15px auto 0 auto;    
-}
-    }
-
-
-
-
-
-@media all and (max-width:569px) {
-            .portofolio {
-        width:77%;
-    }
-}
-
-@media all and (max-width: 480px) {
-       .portofolio {
-        width:90%;
-}
-}
-
-
-
-@media all and (max-width:600px) {
-
-    .container.first-page {
-        background-size:850px;
-        background-position:75% 30%;
-    }
-
-    .container.first-page:before {
-    border-width: 150px 240px 0 0;
-
-}
-    .home-text {
-        font-size:20px;
-        width:100%;
-        text-align:center;
-    }
-
-    .home-text h1 {
-        font-size:30px;
-
-    }
-
-    .home-text h4 {
-        font-size:25px;
-    }
-
-}
-
-@media all and (max-width:690px) {
-    .social {
-    flex-direction:row;
-    left:0;
-    right:0;
-    bottom:3.5rem;
-}
-
-.social .fa {
-    margin:20px 10px 0 10px;
-}
-}
 
 @media all and (max-width:767px) {
 
@@ -893,6 +813,7 @@ span::selection {
     right:0;
     top:0;
 }
+
 .logo a img {
 
 height:120px;
@@ -959,22 +880,125 @@ width:100%;
 }
 }
 
-@media all and (max-width:960px) {
-    .container.fourth-page .home-text p {
-        width:90%; 
+
+@media all and (max-width:690px) {
+    .social {
+    flex-direction:row;
+    left:0;
+    right:0;
+    bottom:4.5rem;
+}
+
+.social .fa {
+    margin:20px 10px 0 10px;
+}
+}
+
+
+
+
+@media all and (max-width:600px) {
+
+    .container.first-page {
+        background-size:850px;
+        background-position:75% 30%;
+    }
+
+    .container.first-page:before {
+    border-width: 150px 240px 0 0;
+
+}
+    .home-text {
+        font-size:20px;
+        width:100%;
+        text-align:center;
+    }
+
+    .home-text h1 {
+        font-size:30px;
+
+    }
+
+    .home-text h4 {
+        font-size:25px;
 
     }
 
 
-
-    .portofolio {
-        width:45%;
+       .portofolio-container .portofolio {
+        width:70%;
     }
 
-    .portofolio-container {
+}
+
+
+
+
+
+    @media all and (max-width:569px) {
+        .portofolio {
+        width:77%;
+    }
+}
+
+
+
+@media all and (max-width: 480px) {
+       .portofolio {
+        width:90%;
+}
+}
+
+
+@media all and (max-width:380px) {
+.container.second-page .home-text {
+
+    width:100%;
+}
+
+.container.second-page .home-text h1 {
+    font-size:35px;
+}
+
+.container.second-page .home-text p {
     width:90%;
 }
+    .open-nav {
+        width:70px;
+    }
+.logo {
+    margin-right:8px;
+    top:-2px;
 }
+
+.logo a img {
+   height:100px;
+   right:-1.5rem;
+}
+
+    .home-text {
+        text-align:center;
+}
+
+.home-text h4 {
+    font-size:20px;
+
+}
+
+.home-text h1 {
+    font-size:30px;
+    width:90%;
+    margin:15px auto 0 auto;    
+}
+
+       .portofolio-container .portofolio {
+        width:100%;
+    }
+    }
+
+
+
+
 
 
 
