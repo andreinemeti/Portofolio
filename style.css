@@ -207,8 +207,9 @@ color:#E7E3E3;
 .home-text h4 {
 
     margin-top:95px;
-font-weight:100;
-
+font-weight:bold;
+color:white;
+background:rgba(0,0,0,0.2);
 
 }
 
