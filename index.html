@@ -32,7 +32,7 @@
   <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
   <a href="#">Services</a>
-  <a href="#">Clients</a>
+  <a href="#">Portofolio</a>
   <a href="#">Contact</a>
 </div> <!-- end mySidenav -->
 
@@ -45,7 +45,7 @@
 			<div class="social">
 				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-								<a href="#"><i class="fa fa-codepen" aria-hidden="true"></i>
+				<a href="#"><i class="fa fa-codepen" aria-hidden="true"></i>
 								</a>
 			</div> <!-- end social -->
 				<div class=scroll-container>
@@ -60,7 +60,7 @@
 		</div> <!-- end container first-page -->
 
 		<div class="container second-page">
-	<div class="overlay2">
+	<div class="overlay">
 
 			</div>
 				<div class="home-text">
@@ -112,7 +112,9 @@
 
 					</ul>
 				</div>
+							<p id="info"></p>
 			</div>
+
 <div class="portofolio-container">
 
 
@@ -274,7 +276,7 @@
   </div>
 </div>
 
-<div class="filter portofolio html css portofolio14">
+<div class="filter portofolio bootstrap portofolio14">
 
 	  <div class="hover-text">
 <div class="text">
@@ -339,7 +341,7 @@
 
 
 	<div class="container fifth-page">
-	<div class="overlay2">
+	<div class="overlay">
 
 			</div>
 				<div class="home-text">
@@ -350,33 +352,56 @@
 					consequat.</p>
 
 				</div>
-						<div class="contact">
-		<div class="map">
-			abc
-		</div>
-		<div class="contact-info">
-			ABC
-		</div>
-		</div>
-		</div> <!-- end container fifth page -->
-
-
 
 		</div> <!-- end container fifth page -->
-
-
+		<footer class="footer">
+			<div class="left">
+				<div class="form-container">
+					<h2>Let's get in touch</h2>
+					<p>Do you have an idea and need someone to help you with your online presence?</p>
+						<form method="POST" action="http://formspree.io/nemetimarian@yahoo.com">
+							<input type="text" name="name" placeholder="Your name">
+							<br/>
+  							<input type="email" name="email" placeholder="Your email">
+  							<br/>
+  							<textarea name="message" placeholder="Your message"></textarea>
+  							<br/>
+  							<button type="submit">Send</button>
+						</form>
+				</div> <!-- end form container-->
+			</div> <!-- end left container -->
+			<div class="right">
+				<div class="logo">
+					<img src="logo.png" alt="logo">
+				</div>
+				  <div class="social-icons">
+				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-codepen" aria-hidden="true"></i>
+                    </div>
+			</div> <!-- end right container -->
+		</footer> <!-- end footer -->
 
 	</div> <!-- end main wrapper -->
+	   <div id="bodyBlur"></div>
 		<script>
-			
+
+var bodyBlur = document.getElementById("bodyBlur");		
 var myNav =  document.getElementById("mySidenav");
 			function openNav() {
+			bodyBlur.style.display = "block";
        		myNav.classList.add('mobile-only');
 }
 
 		function closeNav() {
  		myNav.classList.remove("mobile-only");
+ 		bodyBlur.style.display = "none";
 }
+
+bodyBlur.addEventListener("click", function(){
+	bodyBlur.style.display = "none";
+	myNav.classList.remove("mobile-only");
+});
 
 
 
@@ -384,20 +409,21 @@ var myNav =  document.getElementById("mySidenav");
 
 //filter portofolio
 
+
 filterSelection("all")
 function filterSelection(c) {
-
-  var x, i;
+  var x, i, info;
+  info = document.getElementById("info");
   x = document.getElementsByClassName("filter"); 
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     w3AddClass(x[i], "animated");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        info.innerHTML = "Showing " + document.querySelectorAll('.show').length + " results";
 
-  }
-
-
+  } if (document.querySelectorAll('.show').length < 2) 
+ 	 info.innerHTML = "Showing " + document.querySelectorAll('.show').length + " result";
 }
 
 function w3AddClass(element, name) {
@@ -408,7 +434,6 @@ function w3AddClass(element, name) {
   for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {
     	element.className += " " + arr2[i];
-
     }
   }
 }
@@ -436,8 +461,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-
 
 
 		</script>
