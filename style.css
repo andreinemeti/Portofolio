@@ -737,6 +737,7 @@ button[type="submit"] {
     color:white;
     cursor:pointer;
     transition:all .3s;
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15)
 }
 
 button:focus {outline:0;}
@@ -975,6 +976,7 @@ width:100%;
     input[type="text"], input[type="email"], textarea, button[type="submit"] {
     float:none;
     width:70%;
+
 }
 }
 
