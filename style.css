@@ -717,7 +717,7 @@ input[type="text"], input[type="email"], textarea {
     float:left;
     height:40px;
     margin-bottom:5px;
-    border:1px solid blue;
+    border:1px solid #8abdff;
     padding:10px;
     box-sizing:border-box;
 }
@@ -731,15 +731,18 @@ button[type="submit"] {
        margin-top:10px;
     width:150px;
     height:50px;
-    background:transparent;
-    border:1px solid blue;
+
+    background:#db123d;
+    border:1px solid #db123d;
     color:white;
     cursor:pointer;
+    transition:all .3s;
 }
 
-button[type="submit"]:hover {
-    background:blue;
+button:focus {outline:0;}
 
+button[type="submit"]:hover {
+     background:transparent;
 }
 
 input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
@@ -781,11 +784,11 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
 
 .copyright a {
 	text-decoration:none;
-	color:#2222F4;
+	color:#8abdff;
 }
 
 .copyright a:hover {
-	color:#273BFE;
+	color:#ABCEFC;
 }
 
 @media all and (max-width:960px) {
