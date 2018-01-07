@@ -20,77 +20,85 @@
 
 <body>
     <div class="main-wrapper">
-        <div class="container first-page">
+        <section class="first-page">
             <div class="overlay">
             </div>
-            <div class="logo">
+            <section class="logo">
                 <a href="index.html"><img src="img-optimized/logo.png" alt="logo"></a>
-            </div>
-            <div class="open-nav" onclick="openNav()">
+            </section>
+            <nav class="open-nav" onclick="openNav()">
                 <span style="font-size:30px;cursor:pointer">&#9776;</span>
-            </div>
-            <div id="mySidenav" class="sidenav">
+            </nav>
+            <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Portofolio</a>
-                <a href="#">Contact</a>
-            </div>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
             <!-- end mySidenav -->
-            <div class="home-text">
+            <section class="home-text">
                 <h4>HI! I'M ANDREI &amp; I AM A</h4>
                 <h1>Freelance<br/>Front-end<br/>Developer</h1>
-            </div>
-            <div class="social">
+            </section>
+            <aside class="social">
                 <a href="https://www.linkedin.com/in/andrei-marian-nemeti/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="https://github.com/andreinemeti" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a href="https://codepen.io/andreimarian/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>
 								</a>
-            </div>
+            </aside>
             <!-- end social -->
-            <div class=scroll-container>
-                <a href=#>
-                    <div class=mouse>
+            <section class="scroll-container">
+                <a href="#">
+                    <div class="mouse">
                         <div class=scroller></div>
                     </div>
                 </a>
-            </div>
+            </section>
             <!-- end scroll-container -->
-        </div>
+        </section>
         <!-- end container first-page -->
-        <div class="container second-page">
+        <section class="container second-page">
             <div class="overlay">
             </div>
-            <div class="home-text">
-                <h1>WELCOME</h1>
+            <section class="home-text">
+            	<header>
+                	<h1>WELCOME</h1>
+            	</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-            </div>
-        </div>
+            </section>
+        </section>
         <!-- end container second page -->
-        <div class="third-page">
-            <div class="container left">
-                <div class="home-text">
-                    <h1>LOL</h1>
+        <section class="third-page">
+            <section class="container left" id="about">
+                <section class="home-text">
+                	<header>
+                    	<h1>ABOUT</h1>
+                    </header>
+                    <p>I enjoy turning complex problems into easy, human readable solutions, and I'm really passionate about front-end development.
+                        <br/>When i'm not doing freelance work, I usually work on various personal projects, watch talented developers how they code, ride my bike, and listen to music.</p>
+                </section>
+            </section> <!-- end container left -->
+            <section class="container right" id="services">
+                <section class="home-text">
+                	<header>
+                    	<h1>SERVICES</h1>
+                    </header>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="home-text">
-                    <h1>LOL</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </section>
         <!-- end container third-page -->
-        <div class="container fourth-page  clearfix">
-            <div class="home-text">
-                <h1>WEB PORTOFOLIO</h1>
+        <section class="container fourth-page clearfix">
+            <section class="home-text" id="portofolio">
+            	<header>
+                	<h1>WEB PORTOFOLIO</h1>
+                </header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="sortContainer">
+                <section class="sortContainer">
                     <ul id="sortItems">
                         <li class="sortBtn active" onclick="filterSelection('all')">SHOW ALL</li>
                         <li class="sortBtn" onclick="filterSelection('html css')">HTML5 / CSS3</li>
@@ -99,174 +107,176 @@
                         <li class="sortBtn" onclick="filterSelection('bootstrap')">Bootstrap</li>
                         <li class="sortBtn" onclick="filterSelection('wordpress')">WordPress</li>
                     </ul>
-                </div>
+                </section>
                 <p id="info"></p>
-            </div>
-            <div class="portofolio-container">
-                <div class="filter portofolio bootstrap portofolio1">
-                    <div class="hover-text">
+            </section> <!-- end home text -->
+            <section class="portofolio-container">
+                <article class="filter portofolio bootstrap portofolio1">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/LAW-FIRM/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio bootstrap portofolio2">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio bootstrap portofolio2">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/Artificial-intelligence---no-JS/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio jquery portofolio3">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio jquery portofolio3">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/Simple-product-manager/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio bootstrap jquery portofolio4">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio bootstrap jquery portofolio4">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/watch-store/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio html css portofolio5">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio html css portofolio5">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/architecture/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio bootstrap portofolio6">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio bootstrap portofolio6">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/Hipsters.com-Website/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio wordpress portofolio7">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio wordpress portofolio7">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="http://findingmyway.ro/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio jquery portofolio8">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio jquery portofolio8">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/Sticky-notes/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio jquery portofolio9">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio jquery portofolio9">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/yPZaox/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio javascript portofolio10">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio javascript portofolio10">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://andreinemeti.github.io/CNP-VALIDATOR/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio html css portofolio11">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio html css portofolio11">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/mBxzXJ/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio html css portofolio12">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio html css portofolio12">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/XeZyQK/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio html css portofolio13">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio html css portofolio13">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/YrmKGe/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio bootstrap portofolio14">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio bootstrap portofolio14">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/KXyWGQ/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio javascript portofolio15">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio javascript portofolio15">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/qVpGyP/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio html css portofolio16">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio html css portofolio16">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/QqvZZE/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio html css portofolio17">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio html css portofolio17">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/aLLYzw/" target="_blank"></a>
-                    </div>
-                </div>
-                <div class="filter portofolio bootstrap portofolio18">
-                    <div class="hover-text">
+                    </section>
+                </article>
+                <article class="filter portofolio bootstrap portofolio18">
+                    <section class="hover-text">
                         <div class="text">
                             <p>View project <i aria-hidden="true" class="fa fa-arrow-right"></i></p>
                         </div>
                         <a href="https://codepen.io/andreimarian/full/PJjvyg/" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                </article>
+            </section>
             <!-- end portofolio container -->
             <a id="viewMoreBtn" href="https://codepen.io/andreimarian" target="_blank">View all my work</a>
-        </div>
+        </section>
         <!-- end container fourth-page -->
-        <div class="container fifth-page">
+        <section class="container fifth-page" id="contact">
             <div class="overlay">
             </div>
-            <div class="home-text">
+            <section class="home-text">
                 <h1>THANKS FOR PASSING BY</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-            </div>
-        </div>
+            </section>
+        </section>
         <!-- end container fifth page -->
         <footer class="footer">
-            <div class="left">
-                <div class="form-container">
-                    <h2>Let's get in touch</h2>
-                    <p>Do you have an idea and need some help with building your online presence?</p>
+            <section class="left">
+                <section class="form-container">
+                	<header>
+                    	<h2>Let's get in touch</h2>
+                	</header>
+                    <p>Do you have a great idea or do you need help building your online presence?</p>
                     <form method="POST" action="https://formspree.io/nemetimarian@yahoo.com">
                         <input type="text" name="name" placeholder="Your name">
                         <br/>
@@ -276,24 +286,24 @@
                         <br/>
                         <button type="submit">Send</button>
                     </form>
-                </div>
+                </section>
                 <!-- end form container-->
-            </div>
+            </section>
             <!-- end left container -->
-            <div class="right">
-                <div class="logo">
+            <section class="right">
+                <section class="logo">
                     <img src="img-optimized/logo.png" alt="logo">
-                </div>
-                <div class="social-icons">
+                </section>
+                <aside class="social-icons">
                     <a href="https://www.linkedin.com/in/andrei-marian-nemeti/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="https://github.com/andreinemeti" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                     <a href="https://codepen.io/andreimarian/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-                </div>
-                <div class="copyright">
+                </aside>
+                <aside class="copyright">
                     <p>&copy; 2017 Andrei M. Nemeti</p>
                     <p><a href="mailto:nemetimarian@yahoo.com"><i class="fa fa-envelope" aria-hidden="true"></i> nemetimarian@yahoo.com</a></p>
-                </div>
-            </div>
+                </aside>
+            </section>
             <!-- end right container -->
         </footer>
         <!-- end footer -->
@@ -320,7 +330,12 @@
     });
 
 
+
+
+
     //filter portofolio
+
+
     filterSelection("all")
 
     function filterSelection(c) {
