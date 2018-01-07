@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="main-wrapper">
+    <div class="main-wrapper" id="top">
         <section class="first-page">
             <div class="overlay">
             </div>
@@ -49,7 +49,7 @@
             </aside>
             <!-- end social -->
             <section class="scroll-container">
-                <a href="#">
+                <a href="#welcome">
                     <div class="mouse">
                         <div class=scroller></div>
                     </div>
@@ -58,7 +58,7 @@
             <!-- end scroll-container -->
         </section>
         <!-- end container first-page -->
-        <section class="container second-page">
+        <section class="second-page" id="welcome">
             <div class="overlay">
             </div>
             <section class="home-text">
@@ -91,7 +91,7 @@
             </section>
         </section>
         <!-- end container third-page -->
-        <section class="container fourth-page clearfix">
+        <section class="fourth-page clearfix">
             <section class="home-text" id="portofolio">
             	<header>
                 	<h1>WEB PORTOFOLIO</h1>
@@ -260,7 +260,7 @@
             <a id="viewMoreBtn" href="https://codepen.io/andreimarian" target="_blank">View all my work</a>
         </section>
         <!-- end container fourth-page -->
-        <section class="container fifth-page" id="contact">
+        <section class="fifth-page" id="contact">
             <div class="overlay">
             </div>
             <section class="home-text">
@@ -310,86 +310,8 @@
     </div>
     <!-- end main wrapper -->
     <div id="bodyBlur"></div>
-    <script>
-    var bodyBlur = document.getElementById("bodyBlur");
-    var myNav = document.getElementById("mySidenav");
-
-    function openNav() {
-        bodyBlur.style.display = "block";
-        myNav.classList.add('mobile-only');
-    }
-
-    function closeNav() {
-        myNav.classList.remove("mobile-only");
-        bodyBlur.style.display = "none";
-    }
-
-    bodyBlur.addEventListener("click", function() {
-        bodyBlur.style.display = "none";
-        myNav.classList.remove("mobile-only");
-    });
-
-
-
-
-
-    //filter portofolio
-
-
-    filterSelection("all")
-
-    function filterSelection(c) {
-        var x, i, info;
-        info = document.getElementById("info");
-        x = document.getElementsByClassName("filter");
-        if (c == "all") c = "";
-        for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            w3AddClass(x[i], "animated");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            info.innerHTML = "Showing " + document.querySelectorAll('.show').length + " results";
-
-        }
-        if (document.querySelectorAll('.show').length < 2)
-            info.innerHTML = "Showing " + document.querySelectorAll('.show').length + " result";
-    }
-
-    function w3AddClass(element, name) {
-
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-                element.className += " " + arr2[i];
-            }
-        }
-    }
-
-    function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-        }
-        element.className = arr1.join(" ");
-    }
-
-    // Add active class to the current button (highlight it)
-
-    var btnContainer = document.getElementById("sortItems");
-    var btns = btnContainer.getElementsByClassName("sortBtn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
-    </script>
+    <a href="#top" id="goToTopBtn" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+<script src="js/script.js"></script>
 </body>
 
 </html>

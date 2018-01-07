@@ -1,8 +1,12 @@
 nav, section, aside, header,h1,h2,h3,h4 {
-    display:block;
+  
      -webkit-margin-before: 0em;
     -webkit-padding-start: 0;
     -webkit-margin-after: 0em;
+}
+
+section, div {
+      outline:none;
 }
 
 @-webkit-keyframes fadeIn {
@@ -211,6 +215,7 @@ height: 0;
     justify-content:center;
     flex-direction:column;
     align-items:center;
+    outline:none;
 
 }
 
@@ -252,8 +257,12 @@ width:100%;
         filter:brightness(2);
 }
 
-.mouse {
+.mouse, .scroller {
+    pointer-events: none;
     width: 3px;
+}
+
+.mouse {
     padding: 10px 15px;
     height: 25px;
     border: 2px solid #007bff;
@@ -264,7 +273,6 @@ width:100%;
 }
 
 .scroller {
-    width: 3px;
     height: 7px;
     border-radius: 25%;
     background-color: #007bff;
@@ -272,7 +280,6 @@ width:100%;
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(.15, .41, .69, .94);
     animation-iteration-count: infinite;
-
 }
 
 .social {
@@ -284,7 +291,6 @@ width:100%;
     height:200px;
     position:absolute;
     bottom:1rem;
-
 }
 
 .social .fa {
@@ -692,6 +698,7 @@ span::selection {
     color: #fff;
 }
 
+
 .footer {
     display:flex;
     color:white;
@@ -699,6 +706,7 @@ span::selection {
     text-align:center;
     height:350px;
     background:#262626;
+
 }
 
 .footer .left {
@@ -747,8 +755,8 @@ button[type="submit"] {
     width:150px;
     height:50px;
 
-    background:#db123d;
-    border:1px solid #db123d;
+    background:#EC2424;
+    border:1px solid #EC2424;
     color:white;
     cursor:pointer;
     transition:all .3s;
@@ -818,6 +826,30 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
     right: 0;
     margin: auto;
 	}
+}
+
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    z-index: 0;
+    background-color: #EC2424;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border:none;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+}
+
+/*in order for the smooth scrolling function to work when you click anywhere on the button*/
+#goToTopBtn .fa {  
+    text-align:center;
+    pointer-events:none;
+ 
 }
 
 
