@@ -1173,6 +1173,10 @@ width:77%;
     font-size:30px;
     width:90%;
 }
+
+section .home-text p {
+    font-size:18.5px!important;
+}
 .portofolio-container .portofolio {
         width:100%;
     }
