@@ -886,12 +886,13 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
 	}
 
     .third-page h1 {
-            margin-top:-15%;
+       
     }
 
 }
 
 @media all and (max-width:960px) {
+
 	.home-text p {
 		font-size:22px;
 	}
@@ -1131,7 +1132,9 @@ width:77%;
 }
 
 @media all and (max-width:380px) {
-
+.home-text p {
+    font-size:18px!important;
+}
     .sidenav.mobile-only {
     width:70%;
 }
@@ -1172,10 +1175,6 @@ width:77%;
 .home-text h1 {
     font-size:30px;
     width:90%;
-}
-
-section .home-text p {
-    font-size:18.5px!important;
 }
 .portofolio-container .portofolio {
         width:100%;
