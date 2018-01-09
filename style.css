@@ -1132,6 +1132,10 @@ width:77%;
     } 
 }
 
+.logos {
+  top:1rem;
+}
+
 @media all and (max-width:380px) {
 
 
