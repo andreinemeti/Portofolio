@@ -1,0 +1,594 @@
+#about-me,
+#contact,
+#profile,
+.info-right {
+    float: right
+}
+
+#about-me,
+#about-me h2,
+#contact,
+#contact h2,
+#portofolio,
+#portofolio h2,
+#skills,
+#skills h2,
+#skills h3,
+.info-left,
+.nav a,
+header {
+    text-align: center
+}
+
+#check-work,
+.mouse,
+.nav a {
+    display: inline-block
+}
+
+.nav a,
+a {
+    text-decoration: none
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    height: 100%
+}
+
+header {
+    height: 2.5rem
+}
+
+.nav {
+    background: #333;
+    background: linear-gradient(#000, #434343);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    -webkit-border-image: url(../img-optimized/border.jpg) 30 stretch;
+    -moz-border-image: url(../img-optimized/border.jpg) 30 stretch;
+    -o-border-image: url(../img-optimized/border.jpg) 30 stretch;
+    border-image: url(../img-optimized/border.jpg) 30 stretch
+}
+
+.nav a {
+    color: #f2f2f2;
+    padding: 15px;
+    background: red;
+    background: linear-gradient(#f50045, #f50049)
+}
+
+.nav a:not(:first-child) {
+    margin-left: 10px
+}
+
+.nav a:hover {
+    filter: brightness(115%);
+    color: #000
+}
+
+.nav .icon {
+    display: none
+}
+
+.info-left {
+    background: url(../img-optimized/fixedimage.jpg) 52.5% no-repeat;
+    background-size: cover;
+    width: 45%;
+    position: fixed;
+    height: 100%;
+    font-size: .8rem;
+    margin-top: 20px
+}
+
+.logos {
+    margin-top: 2rem
+}
+
+.logos img {
+    height: 1.8rem;
+    margin: 6% .5% 0
+}
+
+.logos #fb {
+    height: 1.74rem
+}
+
+.centered {
+    margin: 2% auto 50%
+}
+
+.typed {
+    text-shadow: 1px 1px #000
+}
+
+.centered h1 {
+    margin-top: 25%
+}
+
+.centered h2,
+.info-left h3 {
+    margin-top: -2%
+}
+
+.info-left h3 {
+    color: #9c2442
+}
+
+#robot {
+    display: block;
+    margin: auto;
+    height: 40px;
+    filter: grayscale(100%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out
+}
+
+#robot:hover {
+    filter: grayscale(0)
+}
+
+#button {
+    margin-bottom: 15px
+}
+
+input[type=submit] {
+    padding: 20px;
+    background: orange;
+    background: linear-gradient(#F2994A, #F2C94C);
+    border: 1px solid grey;
+    cursor: pointer
+}
+
+input[type=submit]:hover {
+    filter: brightness(80%)
+}
+
+.info-right {
+    background: url(../img-optimized/imgdoor.jpg) 50% no-repeat;
+    background-size: cover;
+    width: 55%;
+    height: 37.3rem;
+    color: #fff;
+    font-size: 1rem
+}
+
+.info-right .scroll {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    top: 42%;
+    left: 53%;
+    background: #000;
+    opacity: .7;
+    padding-bottom: 12px
+}
+
+.info-right .scroll p {
+    padding: 20px 0;
+    font-size: 1.2rem;
+    -webkit-animation: blink 2s infinite alternate;
+    -moz-animation: blink 2s infinite alternate;
+    -o-animation: blink 2s infinite alternate;
+    animation: blink 2s infinite alternate
+}
+
+.info-right .scroll img {
+    height: 20px;
+    color: #fff
+}
+
+.mouse {
+    width: 3px;
+    padding: 10px 15px;
+    height: 25px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: .75;
+    margin: -22px auto 12px
+}
+
+#about-me,
+#skills {
+    margin-top: 2%
+}
+
+.scroller {
+    width: 3px;
+    height: 7px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite
+}
+
+#about-me,
+#skills li#css {
+    width: 55%
+}
+
+#about-me h2,
+#skills h2 {
+    background: #afaeae;
+    padding: .6rem
+}
+
+#about-me {
+    font-size: 1rem;
+    color: #000
+}
+
+#about-me p {
+    font-size: 17px;
+    padding: 0 50px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: left
+}
+
+#portofolio,
+#skills {
+    width: 55%;
+    font-size: 1rem;
+    float: right
+}
+
+#about-me p::selection,
+a::selection,
+figcaption::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+li::selection,
+span::selection {
+    background: #9c2442;
+    color: #fff
+}
+
+.blue {
+    color: #378bf2
+}
+
+#about-me h2,
+#check-work,
+#contact,
+#portofolio,
+#skills,
+#skills li {
+    color: #fff
+}
+
+#about-me a {
+    text-decoration: underline
+}
+
+#skills h3 {
+    color: #000
+}
+
+.grey {
+    background: #d3d3d3
+}
+
+#skills ul {
+    padding: 10px
+}
+
+#skills li {
+    list-style-type: none;
+    background: orange;
+    text-align: right;
+    padding: .5rem;
+    margin-bottom: 5px
+}
+
+#skills li#html {
+    width: 85%
+}
+
+#skills li#photoshop,
+#skills li#wordpress {
+    width: 35%
+}
+
+#skills li#bootstrap {
+    width: 25%
+}
+
+#skills li#javascript {
+    width: 23%
+}
+
+#skills li#jquery {
+    width: 21%
+}
+
+#skills li#csharp {
+    width: 10%
+}
+
+#skills li#soft {
+    width: 93%
+}
+
+#skills li#singing {
+    width: .1px
+}
+
+#skills li#humor {
+    width: -1px
+}
+
+#portofolio h2 {
+    background: #afaeae;
+    padding: .6rem
+}
+
+#portofolio img {
+    width: 70%;
+    border: 1px solid #000;
+    border-width: 20px 10px;
+    cursor: pointer;
+    /*overflow: hidden;*/
+    transition: transform .3s ease-in-out;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px 4px #d1d3d3
+}
+
+.container {
+    position: relative;
+    width: 89%;
+    margin: 0 auto
+}
+
+.overlay,
+.text {
+    position: absolute
+}
+
+.overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 84.5%;
+    margin: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000
+}
+
+.overlay:hover {
+    color: #fff;
+    opacity: .8
+}
+
+#contact h3,
+a,
+figcaption,
+h4,
+h5 {
+    color: #000
+}
+
+.text {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+figcaption {
+    width: 80%;
+    padding: 15px 0;
+    background: #e0e2e2;
+    border-radius: 0 0 6px 6px;
+    margin: -.5% auto 4%
+}
+
+#check-work {
+    position: static;
+    background: #9c2442;
+    width: 150px;
+    font-size: 15px;
+    padding: 15px 10px;
+    margin: 2% auto 7%;
+    border: 1px solid #9c2442;
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out
+}
+
+#check-work:hover {
+    background: #fff;
+    color: #9c2442;
+    border: 1px solid #9c2442;
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, .3)
+}
+
+#contact {
+    background: url(../img-optimized/contactimage.jpg) right no-repeat;
+    background-size: 50% 150%;
+    width: 55%;
+    font-size: 1rem
+}
+
+#contact h2 {
+    margin-top: 0;
+    background: #afaeae;
+    padding: .6rem
+}
+
+#contact h3 {
+    font-weight: 400
+}
+
+#text {
+    width: 100%;
+    margin: 23px auto
+}
+
+@keyframes blink {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .3
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .3
+    }
+}
+
+@-moz-keyframes blink {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .3
+    }
+}
+
+@-o-keyframes blink {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: .3
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0
+    }
+}
+
+@media screen and (max-width:600px) {
+    #profile {
+        float: none
+    }
+    .nav a:not(:first-child) {
+        display: none
+    }
+    nav a:first-child {
+        float: left
+    }
+    .nav a.icon {
+        float: right;
+        display: block
+    }
+    .nav.responsive {
+        transition: .5s
+    }
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    #about-me,
+    #portofolio,
+    #skills,
+    .info-left,
+    .info-right .scroll {
+        position: static;
+        width: 100%
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        margin: 0;
+        text-align: center
+    }
+    .info-left {
+        margin-top: -3%;
+        background-position: 51%;
+        height: 100vh
+    }
+    .logos img {
+        margin: 6% 2% 0
+    }
+    .info-right {
+        width: 100%;
+        height: 100%
+    }
+    .info-right .scroll {
+        margin: 0 auto 15px;
+        padding-bottom: 13px
+    }
+    #contact {
+        width: 100%;
+        background-size: 30% 150%;
+        background-position: right
+    }
+    figcaption {
+        width: 95%
+    }
+    #portofolio img {
+        border-width: 13px 10px
+    }
+}
+
+@media screen and (max-width:310px) {
+    #about-me p {
+        padding: 5px 15px
+    }
+    #profile {
+        width: 245px
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logos {
+        padding-top: 40px
+    }
+    .centered h3 {
+        margin-bottom: 100px
+    }
+}
+
+@media all and (min-height:0px) and (max-height:480px) {
+    .logos {
+        margin-top: 2.3%
+    }
+    .centered h1 {
+        margin-top: 3%
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 1em
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(240, 20, 10, .7)
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DD3963;
+    outline: #708090 solid 1px
+}
